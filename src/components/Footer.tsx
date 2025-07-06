@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaFingerprint } from 'react-icons/fa';
+import Image from 'next/image';
 
 import { siteDetails } from '@/data/siteDetails';
 import { footerDetails } from '@/data/footer';
@@ -13,9 +13,11 @@ const Footer: React.FC = () => {
           <div>
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
-              <img
+              <Image
                 src={siteDetails.siteLogo}
                 alt={siteDetails.siteName}
+                width={720}
+                height={480}
                 className="w-12 h-12 object-contain min-w-fit"
               />
             </Link>
