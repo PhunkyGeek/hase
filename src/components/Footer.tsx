@@ -18,6 +18,7 @@ const Footer: React.FC = () => {
                 alt={siteDetails.siteName}
                 width={720}
                 height={480}
+                priority
                 className="w-12 h-12 object-contain min-w-fit"
               />
             </Link>
