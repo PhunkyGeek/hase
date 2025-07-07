@@ -19,23 +19,29 @@ const HomePage: React.FC = () => {
 
         <Section
           id="pricing"
-          title="Pricing"
+          title="Pre-Launch Pricing"
           description="Simple, transparent pricing. No surprises."
         >
           <Pricing />
         </Section>
 
-        <Section
+        {/* <Section
           id="testimonials"
           title="What Our Clients Say"
           description="Hear from those who have partnered with us."
         >
           <Testimonials />
-        </Section>
+        </Section> */}
 
         <FAQ />
 
-        <Stats />
+        <Section
+          id="stats"
+          title="Projected Launch Stats"
+          description="Our performace analytics, projected for pilot launch."
+        >
+          <Stats />
+        </Section>
         
         <CTA />
       </Container>

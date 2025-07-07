@@ -15,8 +15,8 @@ export const stats: IStats[] = [
         description: "Average user rating across app stores for safety, speed, and reliability."
     },
     {
-        title: "15+",
+        title: "10+",
         icon: <PiGlobeFill size={34} className="text-green-600" />,
-        description: "Cities served and expanding, bringing smart mobility closer to everyone."
+        description: "Cities to be served and expanding, bringing smart mobility closer to everyone."
     }
 ];

@@ -5,7 +5,7 @@ const Logos: React.FC = () => {
   return (
     <section id="logos" className="py-32 px-5 bg-background">
       <p className="text-lg font-medium text-center">
-        Powered by <span className="text-secondary">20+</span> partners worldwide
+        Powered <span className="text-secondary">by...</span>
       </p>
       <div className="mt-5 w-full flex flex-wrap flex-row items-center justify-evenly gap-5 sm:gap-10 opacity-60 logos-container">
         {/* Google */}
@@ -36,13 +36,13 @@ const Logos: React.FC = () => {
         />
 
         {/* TotalEnergies */}
-        <Image
+        {/* <Image
           src="/images/total.png"
           alt="TotalEnergies Logo"
           width={120}
           height={40}
           className="h-10 w-auto grayscale hover:grayscale-0 transition duration-300"
-        />
+        /> */}
       </div>
     </section>
   );
