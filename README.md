@@ -1,104 +1,130 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnexi-launch%2Ffinwise-landing-page)
-
-# Finwise - Next.js + Tailwind Landing Page Template
-
-Finwise is a lightweight, easily configurable, and customizable **Next.js** and **Tailwind CSS** landing page template. It’s built to be adaptable, performant, and perfect for any product launch, portfolio, or promotional site.
-
-Try out the demo here: [https://finwise-omega.vercel.app](https://finwise-omega.vercel.app).
-
-Please check out the documentation below to get started.
+Sure! Here's a professional and complete `README.md` file tailored for your **HASE Web** project — Nigeria’s first indigenous ride-hailing and car rental platform:
 
 ---
 
-## Features
+```markdown
+# HASE Web
 
-- **Next.js** app router with **TypeScript**
-- **Tailwind CSS** v3 for flexible styling customization
-- Smooth transitions powered by **Framer Motion**
-- Built-in **font optimization** with [next/font](https://nextjs.org/docs/app/api-reference/components/font)
-- Automatic **image optimization** via [next/image](https://nextjs.org/docs/app/building-your-application/optimizing/images)
-- Access to **31+ icon packs** via [React Icons](https://react-icons.github.io/react-icons/)
-- Near-perfect **Lighthouse score**
-- Modular, responsive, and **scalable components**
-- **Free lifetime updates**
+**HASE** is Nigeria’s first indigenous ride-hailing and car rental platform, designed to transform urban mobility through innovation, accessibility, and local-first thinking. Built with modern technologies and scalable infrastructure, the HASE platform empowers users, drivers, and businesses to connect efficiently and affordably across multiple mobility services.
 
 ---
 
-## Sections
+## 🚀 Features
 
-- Hero
-- Partners or Clients Logos
-- Features
-- Pricing
-- Testimonials
-- FAQ
-- Statistics
-- CTA
-- Footer
+- 🚗 **Ride-Hailing Services** — Request affordable rides across cities in real time.
+- 🚙 **Car Rental Platform** — Book self-drive or chauffeured vehicles with ease.
+- 📦 **On-Demand Delivery** — Fast, local deliveries powered by our fleet network.
+- 👥 **Driver & Fleet Management** — Dashboards for managing vehicles, drivers, and earnings.
+- 📊 **Analytics & Reports** — Real-time tracking, performance reports, and earnings insights.
+- 🌍 **Partner Integration Ready** — API endpoints for enterprise and logistics partners.
 
 ---
 
-## Getting Started
+## 🌐 Live URL
+
+Current URL: https://hase-app.vercel.app
+Coming soon: [https://hase.com](https://hase.com)
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: Next.js 14 (App Router), Tailwind CSS, TypeScript
+- **Backend**: Firebase Auth, Firestore
+- **Maps & Geolocation**: Google Maps API
+- **Media Storage**: Web3.Storage (IPFS)
+- **State Management**: Zustand
+- **Authentication**: Firebase Auth + Role-based Access
+- **Deployment**: Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+
+/app            → Routes and page logic (Next.js App Router)
+/components     → Reusable React components
+/store          → Zustand global state stores
+/utils          → Utility functions (e.g., auth, role resolver)
+/public         → Static assets
+/styles         → Global and module styles
+
+````
+
+---
+
+## 🔐 Roles
+
+- **Users**: Book rides, rent cars, request deliveries
+- **Drivers**: Accept ride requests, manage availability
+- **Admins**: Manage users, fleet inventory, monitor analytics
+- **Validators** (for AidLink extension): Approve and manage social impact initiatives
+
+---
+
+## 🧪 Development
 
 ### Prerequisites
 
-Before starting, make sure you have the following installed:
+- Node.js ≥ 18
+- Yarn / npm
+- Firebase project (for authentication and Firestore)
+- Google Maps API Key
 
-- **Node.js**: Version 18 or later
-- **npm**: Version 8 or later (bundled with Node.js)
-- **Code editor**: [VS Code](https://code.visualstudio.com/) is recommended.
+### Setup
 
-### Steps
-
-1. **Install dependencies**: Run `npm install`
-2. **Run the development server**: `npm run dev`
-3. **View your project**: Open [localhost:3000](http://localhost:3000)
-
----
-
-## Customization
-
-1. **Edit colors**: Update `globals.css` for primary, secondary, background, and accent colors.
-2. **Update site details**: Customize `siteDetails.ts` in `/src/data` to reflect your brand and site info.
-3. **Modify content**: Files in `/src/data` handle data for navigation, features, pricing, testimonials, and more.
-4. **Replace favicon**: Add your icon to `/src/app/favicon.ico`.
-5. **Add images**: Update `public/images` for Open Graph metadata (e.g., `og-image.jpg`, `twitter-image.jpg`).
+```bash
+git clone https://github.com/<your-username>/haseweb.git
+cd haseweb
+cp .env.example .env.local # Fill in Firebase, Maps, etc.
+yarn install
+yarn dev
+````
 
 ---
 
-## Deploying on Vercel
+## 🧾 Environment Variables
 
-The fastest way to deploy Finwise is on [Vercel](https://vercel.com/). Simply click the "Deploy with Vercel" button at the top of this README, or check the [Next.js deployment docs](https://vercel.com/docs/deployments/deployment-methods) for other deployment options.
-
----
-
-## Contributing
-
-Finwise is an open-source project, and we welcome contributions from the community! If you have ideas for new components, designs, layouts, or optimizations, please join us in making Finwise even better.
-
-### How to Contribute
-
-1. **Fork the Repository**: Clone it locally.
-2. **Create a New Branch**: For example, `feature/new-section` or `fix/style-issue`.
-3. **Develop and Test**: Make sure your changes work and don't break existing functionality.
-4. **Submit a Pull Request**: Open a pull request with a clear description of your changes, and we'll review it.
-
-### Ideas for Contributions
-
-- New component sections (team introductions, comparison table, case studies, etc.)
-- Additional page variants (e.g., agency, eCommerce, portfolio layouts)
-- Additional themes
-- Documentation updates, tutorials, or guides
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=
+```
 
 ---
 
-## Community and Support
+## ✨ Contribution
 
-Join our community discussions on GitHub to share ideas, ask questions, or suggest improvements. Let’s build something amazing together!
+We welcome contributors! Please fork the repository, make your changes, and open a PR. For major changes, open an issue first to discuss what you’d like to change.
 
+---
 
---- 
+## 📘 License
 
-## License
+This project is licensed under the **MIT License**.
 
-This project is open-source and available under the MIT License. Feel free to use, modify, and distribute it for personal or commercial projects.
+---
+
+## 💬 Contact
+
+* Twitter: [@haseapp](https://twitter.com/haseapp)
+* Email: [support@hase.com](mailto:support@hase.com)
+* Discord: Join via our [community invite link](#)
+
+---
+
+## 🏁 Status
+
+🧪 MVP ready. In progress toward production launch 🚀
+
+```
+
+---
+
+Let me know if you’d like me to tailor the README for deployment or developer onboarding, or generate the badges section (e.g., build, license, version, etc.).
+```
